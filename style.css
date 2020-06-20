@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box:nth-child(2) img {
+  filter: grayscale(1) contrast(5) brightness(2);
+  mix-blend-mode: light;
+}
+
+.box:nth-child(2) img {
+  filter: grayscale(1) contrast(5) brightness(2);
+  mix-blend-mode: light;
+}
+
+.box:nth-child(3) img {
+  filter: grayscale(0.2) contrast(9) brightness(1);
+  mix-blend-mode: darken;
+}
+
+.box:nth-child(4) img {
+  filter: grayscale(0) contrast(2) brightness(2);
+  mix-blend-mode: exclusion;
+}
